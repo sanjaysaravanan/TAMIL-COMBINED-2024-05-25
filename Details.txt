@@ -1,0 +1,70 @@
+
+Topics:
+
+  1. Express Router:
+      Separate & Modularise the API logics using router
+
+      instead of dumping all the API logics in one single file
+  
+  2. Create APIs for the sample questions below,
+
+      1. Assigning a teacher to a student,
+          This should relate the students and teacher
+      2. Get all the students for a specific teacher
+      3. Get the Teacher info for a specific student
+
+  3. DB Connection ---> MongoDB 
+
+    Packages:
+      MongDB 
+
+  Mongoose:
+
+    what is mongoose?
+      schema based object modelling tool for connecting & doing CRUD operation on DB
+
+    schema
+
+    DB Connection:
+      URI string to identify the database service
+  
+  4. Converting the Local variable to Local DB
+        local memory storing will loose the data after server restart
+
+        but local DB Data will be persisted locally in the machine
+
+Task: ( 2023-05-25 )
+
+  Day 34: https://docs.google.com/document/d/1rwPQ2LbHtMZajA_GIZfR-Ko2MFueoT82AmfHTK9V-hM/edit
+
+  Day 35: https://docs.google.com/document/d/1sxHk2QDyK_evjlbwWPklyTXDHHOENKqj-IHS2yNSaHQ/edit
+
+  Create two Object:
+    mentor:
+      name
+      email
+      mentorId
+      // students array contains student ids
+      students: [ 'Gokulnath-1234', 'Namrata-5678' ]
+
+    mentor-assignment:
+      studentId
+      mentorId
+      assignmentId
+
+    student:
+      name
+      email
+      studentId
+      currentMentor: 'Sanjay-1234'
+      prevMentor: 'Prashanth-5678' ( once You assign a mentor to a student change the current & prev mentor accordingly )
+
+    Try to complete in local setup, will teach to deploy the complete setup to cloud tomorrow 
+  
+Next Session:
+
+  6. Cloud Atlas:
+
+      Signing Up & Creating Cloud DB
+
+      Connecting with Cloud Atlas DB
